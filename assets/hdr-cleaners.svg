@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 110" width="1200" height="110" role="img" aria-label="SYSTEM AUDITORS">
+  <defs>
+    <filter id="g" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00151d"/>
+      <stop offset="70%" stop-color="#000308"/>
+      <stop offset="100%" stop-color="#000205"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="110" fill="url(#bg)"/>
+  <g stroke="#00e5ff" stroke-width="0.7" opacity="0.30">
+    <line x1="0" y1="12" x2="1200" y2="12"/>
+    <line x1="0" y1="98" x2="1200" y2="98"/>
+  </g>
+  <rect x="40" y="26" width="5" height="58" fill="#00e5ff" filter="url(#g)"/>
+  <text x="70" y="50" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
+        font-size="12" letter-spacing="6" fill="#00e5ff" opacity="0.9">GROUP C</text>
+  <g filter="url(#g)">
+    <text x="70" y="82" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
+          font-size="34" font-weight="bold" letter-spacing="6" fill="#ffffff">SYSTEM AUDITORS</text>
+  </g>
+  <rect x="491" y="66" width="603" height="1.2" fill="url(#rule)"/>
+  <text x="1160" y="82" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
+        font-size="12" letter-spacing="5" fill="#00e5ff" opacity="0.55">PORTABLE EXE</text>
+</svg>

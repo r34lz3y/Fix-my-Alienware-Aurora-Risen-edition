@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 26" width="1200" height="26" role="img" aria-label="divider">
+  <defs>
+    <linearGradient id="d" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0"/>
+      <stop offset="14%" stop-color="#00e5ff" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#ff9d1e" stop-opacity="0.9"/>
+      <stop offset="86%" stop-color="#00e5ff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="gd" x="-50%" y="-400%" width="200%" height="900%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="26" fill="#000205"/>
+  <rect x="0" y="12" width="1200" height="1.6" fill="url(#d)" filter="url(#gd)"/>
+  <g fill="#00e5ff" opacity="0.9" filter="url(#gd)">
+    <rect x="556" y="8" width="3" height="9"/>
+    <rect x="640" y="8" width="3" height="9"/>
+  </g>
+  <rect x="592" y="6" width="14" height="14" transform="rotate(45 599 13)" fill="none" stroke="#ff9d1e" stroke-width="1.4" filter="url(#gd)"/>
+</svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Fix My Alienware Aurora, Risen Edition">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000205"/>
+      <stop offset="55%" stop-color="#01080f"/>
+      <stop offset="100%" stop-color="#000a12"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0"/>
+      <stop offset="18%" stop-color="#00e5ff" stop-opacity="0.9"/>
+      <stop offset="82%" stop-color="#00e5ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadeAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff9d1e" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#ff9d1e" stop-opacity="0.75"/>
+      <stop offset="70%" stop-color="#ff9d1e" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#ff9d1e" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="horizonGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#0088aa" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect x="0" y="0" width="1200" height="340"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="340" fill="url(#sky)"/>
+
+    <!-- perspective floor grid -->
+    <g opacity="0.5">
+      <ellipse cx="600" cy="262" rx="640" ry="120" fill="url(#horizonGlow)"/>
+      <g stroke="#00b8d4" stroke-width="1" opacity="0.42">
+        <line x1="600" y1="262" x2="-460" y2="360"/>
+        <line x1="600" y1="262" x2="-160" y2="360"/>
+        <line x1="600" y1="262" x2="120" y2="360"/>
+        <line x1="600" y1="262" x2="330" y2="360"/>
+        <line x1="600" y1="262" x2="490" y2="360"/>
+        <line x1="600" y1="262" x2="600" y2="360"/>
+        <line x1="600" y1="262" x2="710" y2="360"/>
+        <line x1="600" y1="262" x2="870" y2="360"/>
+        <line x1="600" y1="262" x2="1080" y2="360"/>
+        <line x1="600" y1="262" x2="1360" y2="360"/>
+        <line x1="600" y1="262" x2="1660" y2="360"/>
+      </g>
+      <g stroke="#00e5ff" fill="none" opacity="0.34">
+        <line x1="0" y1="270" x2="1200" y2="270" stroke-width="0.6"/>
+        <line x1="0" y1="282" x2="1200" y2="282" stroke-width="0.7"/>
+        <line x1="0" y1="298" x2="1200" y2="298" stroke-width="0.9"/>
+        <line x1="0" y1="319" x2="1200" y2="319" stroke-width="1.1"/>
+      </g>
+    </g>
+
+    <!-- horizon light bar -->
+    <rect x="0" y="260" width="1200" height="2.2" fill="url(#fade)" filter="url(#glow)"/>
+
+    <!-- corner brackets -->
+    <g stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.85" filter="url(#softglow)">
+      <path d="M28 60 L28 26 L96 26"/>
+      <path d="M1172 60 L1172 26 L1104 26"/>
+      <path d="M28 292 L28 314 L96 314"/>
+      <path d="M1172 292 L1172 314 L1104 314"/>
+    </g>
+    <g fill="#ff9d1e" opacity="0.9">
+      <rect x="104" y="24" width="26" height="4"/>
+      <rect x="1070" y="24" width="26" height="4"/>
+    </g>
+
+    <!-- eyebrow -->
+    <text x="600" y="74" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
+          font-size="15" letter-spacing="9" fill="#7fe9ff" opacity="0.8">SYSTEM DIAGNOSTIC PROTOCOL</text>
+
+    <!-- title -->
+    <g filter="url(#glow)">
+      <text x="600" y="146" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
+            font-size="60" font-weight="bold" letter-spacing="8" fill="#ffffff">FIX MY ALIENWARE</text>
+      <text x="600" y="212" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
+            font-size="60" font-weight="bold" letter-spacing="8" fill="#00e5ff">AURORA</text>
+    </g>
+    <text x="600" y="212" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
+          font-size="60" font-weight="bold" letter-spacing="8" fill="#d9fbff" opacity="0.35">AURORA</text>
+
+    <!-- rule + subtitle -->
+    <rect x="330" y="234" width="540" height="1.4" fill="url(#fadeAmber)" filter="url(#softglow)"/>
+    <text x="600" y="253" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
+          font-size="16" letter-spacing="12" fill="#ff9d1e">RISEN EDITION</text>
+
+    <!-- readouts -->
+    <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="3" fill="#4fd8f0" opacity="0.72">
+      <text x="44" y="182">RYZEN 5 5600X</text>
+      <text x="44" y="202">16 GB DDR4</text>
+      <text x="1156" y="182" text-anchor="end">USB TOOLKIT v1</text>
+      <text x="1156" y="202" text-anchor="end">STATUS: READY</text>
+    </g>
+  </g>
+</svg>

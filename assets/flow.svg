@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="Diagnostic sequence: check temps, check drive health, audit services, system repairs">
+  <defs>
+    <filter id="g" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="4.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="gs" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#00e5ff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="260" fill="#000205"/>
+  <g stroke="#0a3a48" stroke-width="0.6" opacity="0.5">
+    <line x1="0" y1="52" x2="1200" y2="52"/>
+    <line x1="0" y1="208" x2="1200" y2="208"/>
+  </g>
+
+  <text x="600" y="34" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
+        font-size="14" letter-spacing="8" fill="#7fe9ff" opacity="0.85">RECOMMENDED ACTION SEQUENCE</text>
+
+  <!-- connector wire -->
+  <line x1="120" y1="130" x2="1080" y2="130" stroke="url(#wire)" stroke-width="1.6" filter="url(#gs)"/>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+    <!-- Node 1 -->
+    <g filter="url(#g)">
+      <rect x="42" y="92" width="238" height="76" rx="4" fill="#00131a" stroke="#00e5ff" stroke-width="1.8"/>
+    </g>
+    <rect x="42" y="92" width="6" height="76" fill="#ff9d1e"/>
+    <text x="66" y="118" font-size="12" letter-spacing="4" fill="#ff9d1e">STEP 01</text>
+    <text x="66" y="141" font-size="17" font-weight="bold" letter-spacing="2" fill="#ffffff">CHECK TEMPS</text>
+    <text x="66" y="159" font-size="12" letter-spacing="2" fill="#5fd9ef">HWiNFO64</text>
+
+    <!-- Node 2 -->
+    <g filter="url(#g)">
+      <rect x="320" y="92" width="238" height="76" rx="4" fill="#00131a" stroke="#00e5ff" stroke-width="1.8"/>
+    </g>
+    <rect x="320" y="92" width="6" height="76" fill="#ff9d1e"/>
+    <text x="344" y="118" font-size="12" letter-spacing="4" fill="#ff9d1e">STEP 02</text>
+    <text x="344" y="141" font-size="17" font-weight="bold" letter-spacing="2" fill="#ffffff">DRIVE HEALTH</text>
+    <text x="344" y="159" font-size="12" letter-spacing="2" fill="#5fd9ef">CrystalDiskInfo</text>
+
+    <!-- Node 3 -->
+    <g filter="url(#g)">
+      <rect x="598" y="92" width="238" height="76" rx="4" fill="#00131a" stroke="#00e5ff" stroke-width="1.8"/>
+    </g>
+    <rect x="598" y="92" width="6" height="76" fill="#ff9d1e"/>
+    <text x="622" y="118" font-size="12" letter-spacing="4" fill="#ff9d1e">STEP 03</text>
+    <text x="622" y="141" font-size="17" font-weight="bold" letter-spacing="2" fill="#ffffff">AUDIT SERVICES</text>
+    <text x="622" y="159" font-size="12" letter-spacing="2" fill="#5fd9ef">Autoruns</text>
+
+    <!-- Node 4 -->
+    <g filter="url(#g)">
+      <rect x="876" y="92" width="238" height="76" rx="4" fill="#00131a" stroke="#00e5ff" stroke-width="1.8"/>
+    </g>
+    <rect x="876" y="92" width="6" height="76" fill="#ff9d1e"/>
+    <text x="900" y="118" font-size="12" letter-spacing="4" fill="#ff9d1e">STEP 04</text>
+    <text x="900" y="141" font-size="17" font-weight="bold" letter-spacing="2" fill="#ffffff">SYSTEM REPAIR</text>
+    <text x="900" y="159" font-size="12" letter-spacing="2" fill="#5fd9ef">DISM + SFC</text>
+  </g>
+
+  <!-- arrowheads between nodes -->
+  <g fill="#00e5ff" filter="url(#gs)">
+    <path d="M288 124 L312 130 L288 136 Z"/>
+    <path d="M566 124 L590 130 L566 136 Z"/>
+    <path d="M844 124 L868 130 L844 136 Z"/>
+  </g>
+
+  <text x="600" y="238" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
+        font-size="12" letter-spacing="4" fill="#3fb4cc" opacity="0.8">HARDWARE FIRST &#183; SOFTWARE SECOND &#183; REINSTALL LAST</text>
+</svg>
